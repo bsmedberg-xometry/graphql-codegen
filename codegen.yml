@@ -1,0 +1,16 @@
+overwrite: true
+schema: "src/schema.ts"
+documents: null
+generates:
+  src/generated/schema-types.ts:
+    plugins:
+      - typescript
+      - typescript-resolvers
+    config:
+      avoidOptionals: true
+      immutableTypes: true
+      mappers:
+        User: ../user#User
+      useIndexSignature: true
+      typesPrefix: "I"
+      federation: true

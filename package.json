@@ -1,0 +1,26 @@
+{
+  "name": "graphql-codegen-issue-3207-demo",
+  "version": "1.0.0",
+  "description": "Demo repository for https://github.com/dotansimha/graphql-code-generator/issues/3207",
+  "main": "build/index.js",
+  "repository": "https://github.com/bsmedberg-xometry/graphql-codegen-issue-3207-demo",
+  "author": "Benjamin Smedberg <bsmedberg@xometry.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.10.0",
+    "@graphql-codegen/typescript": "^1.10.0",
+    "@graphql-codegen/typescript-resolvers": "^1.10.0",
+    "graphql": "^14.5.8",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "codegen": "graphql-codegen --config codegen.yml",
+    "compile": "tsc -p ."
+  },
+  "dependencies": {
+    "@apollo/federation": "^0.11.2",
+    "apollo-server": "^2.9.15"
+  }
+}
